@@ -14,8 +14,10 @@
 		724E9E7422CCB30600921BCA /* LoginServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7322CCB30600921BCA /* LoginServiceTests.swift */; };
 		724E9E7622CCBEE500921BCA /* WebServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7522CCBEE500921BCA /* WebServiceError.swift */; };
 		724E9E7922CCC38B00921BCA /* OneTimePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7822CCC38B00921BCA /* OneTimePassword.swift */; };
+		724E9E7D22CCD8A200921BCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7C22CCD8A200921BCA /* LoginViewController.swift */; };
+		724E9E7F22CCD8BC00921BCA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7E22CCD8BC00921BCA /* LoginViewModel.swift */; };
+		724E9E8222CCEFAB00921BCA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E8122CCEFAB00921BCA /* UIViewController+Extensions.swift */; };
 		72C005E322CC7FE100C9AAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */; };
-		72C005E522CC7FE100C9AAE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005E422CC7FE100C9AAE6 /* ViewController.swift */; };
 		72C005E822CC7FE100C9AAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C005E622CC7FE100C9AAE6 /* Main.storyboard */; };
 		72C005EA22CC7FE200C9AAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C005E922CC7FE200C9AAE6 /* Assets.xcassets */; };
 		72C005ED22CC7FE200C9AAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C005EB22CC7FE200C9AAE6 /* LaunchScreen.storyboard */; };
@@ -41,9 +43,11 @@
 		724E9E7322CCB30600921BCA /* LoginServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTests.swift; sourceTree = "<group>"; };
 		724E9E7522CCBEE500921BCA /* WebServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceError.swift; sourceTree = "<group>"; };
 		724E9E7822CCC38B00921BCA /* OneTimePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimePassword.swift; sourceTree = "<group>"; };
+		724E9E7C22CCD8A200921BCA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		724E9E7E22CCD8BC00921BCA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		724E9E8122CCEFAB00921BCA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		72C005DF22CC7FE100C9AAE6 /* OTPLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72C005E422CC7FE100C9AAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72C005E722CC7FE100C9AAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72C005E922CC7FE200C9AAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C005EC22CC7FE200C9AAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,6 +107,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		724E9E7A22CCD83C00921BCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E7C22CCD8A200921BCA /* LoginViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		724E9E7B22CCD84800921BCA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E7E22CCD8BC00921BCA /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		724E9E8022CCEF8400921BCA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E8122CCEFAB00921BCA /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		72C005D622CC7FE100C9AAE6 = {
 			isa = PBXGroup;
 			children = (
@@ -126,10 +154,12 @@
 		72C005E122CC7FE100C9AAE6 /* OTPLogin */ = {
 			isa = PBXGroup;
 			children = (
+				724E9E8022CCEF8400921BCA /* Extensions */,
+				724E9E7A22CCD83C00921BCA /* Views */,
+				724E9E7B22CCD84800921BCA /* ViewModels */,
 				724E9E7722CCC36C00921BCA /* Models */,
 				724E9E6C22CCAE9A00921BCA /* WebServices */,
 				72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */,
-				72C005E422CC7FE100C9AAE6 /* ViewController.swift */,
 				72C005E622CC7FE100C9AAE6 /* Main.storyboard */,
 				72C005E922CC7FE200C9AAE6 /* Assets.xcassets */,
 				72C005EB22CC7FE200C9AAE6 /* LaunchScreen.storyboard */,
@@ -345,9 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724E9E7D22CCD8A200921BCA /* LoginViewController.swift in Sources */,
 				724E9E7922CCC38B00921BCA /* OneTimePassword.swift in Sources */,
 				724E9E7622CCBEE500921BCA /* WebServiceError.swift in Sources */,
-				72C005E522CC7FE100C9AAE6 /* ViewController.swift in Sources */,
+				724E9E7F22CCD8BC00921BCA /* LoginViewModel.swift in Sources */,
+				724E9E8222CCEFAB00921BCA /* UIViewController+Extensions.swift in Sources */,
 				724E9E7022CCAEEA00921BCA /* LoginServiceImpl.swift in Sources */,
 				724E9E6E22CCAEDE00921BCA /* LoginService.swift in Sources */,
 				72C005E322CC7FE100C9AAE6 /* AppDelegate.swift in Sources */,
