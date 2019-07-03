@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D4504C38186DD7917538DCD /* Pods_OTPLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5282CE7C0B099455B9AF4A /* Pods_OTPLoginTests.framework */; };
+		5AAA285F12242C759A2D4CFF /* Pods_OTPLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45752D26E117131B1A01AC59 /* Pods_OTPLogin.framework */; };
 		72C005E322CC7FE100C9AAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */; };
 		72C005E522CC7FE100C9AAE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005E422CC7FE100C9AAE6 /* ViewController.swift */; };
 		72C005E822CC7FE100C9AAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C005E622CC7FE100C9AAE6 /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03EF5823CDB6F558A6B21466 /* Pods-OTPLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLogin.release.xcconfig"; path = "Target Support Files/Pods-OTPLogin/Pods-OTPLogin.release.xcconfig"; sourceTree = "<group>"; };
+		45752D26E117131B1A01AC59 /* Pods_OTPLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5282CE7C0B099455B9AF4A /* Pods_OTPLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C005DF22CC7FE100C9AAE6 /* OTPLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C005E422CC7FE100C9AAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		72C005F322CC7FE200C9AAE6 /* OTPLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTPLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C005F722CC7FE200C9AAE6 /* OTPLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPLoginTests.swift; sourceTree = "<group>"; };
 		72C005F922CC7FE200C9AAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B37807EC4709B26ECD48299 /* Pods-OTPLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLoginTests.release.xcconfig"; path = "Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7DD560CA69FA2EEEEE552F2 /* Pods-OTPLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF79A8D3E93E0904C3EA8199 /* Pods-OTPLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLogin.debug.xcconfig"; path = "Target Support Files/Pods-OTPLogin/Pods-OTPLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAA285F12242C759A2D4CFF /* Pods_OTPLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4504C38186DD7917538DCD /* Pods_OTPLoginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		453E18B9B104A8A99E885B53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45752D26E117131B1A01AC59 /* Pods_OTPLogin.framework */,
+				5D5282CE7C0B099455B9AF4A /* Pods_OTPLoginTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		72C005D622CC7FE100C9AAE6 = {
 			isa = PBXGroup;
 			children = (
 				72C005E122CC7FE100C9AAE6 /* OTPLogin */,
 				72C005F622CC7FE200C9AAE6 /* OTPLoginTests */,
 				72C005E022CC7FE100C9AAE6 /* Products */,
+				96123CD715662814FE527696 /* Pods */,
+				453E18B9B104A8A99E885B53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +117,18 @@
 			path = OTPLoginTests;
 			sourceTree = "<group>";
 		};
+		96123CD715662814FE527696 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF79A8D3E93E0904C3EA8199 /* Pods-OTPLogin.debug.xcconfig */,
+				03EF5823CDB6F558A6B21466 /* Pods-OTPLogin.release.xcconfig */,
+				E7DD560CA69FA2EEEEE552F2 /* Pods-OTPLoginTests.debug.xcconfig */,
+				8B37807EC4709B26ECD48299 /* Pods-OTPLoginTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72C005FC22CC7FE200C9AAE6 /* Build configuration list for PBXNativeTarget "OTPLogin" */;
 			buildPhases = (
+				E25CF271E24D253298299C19 /* [CP] Check Pods Manifest.lock */,
 				72C005DB22CC7FE100C9AAE6 /* Sources */,
 				72C005DC22CC7FE100C9AAE6 /* Frameworks */,
 				72C005DD22CC7FE100C9AAE6 /* Resources */,
+				2F045E4E0956E825144FD3C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72C005FF22CC7FE200C9AAE6 /* Build configuration list for PBXNativeTarget "OTPLoginTests" */;
 			buildPhases = (
+				316DA42BC51FE9268394414B /* [CP] Check Pods Manifest.lock */,
 				72C005EF22CC7FE200C9AAE6 /* Sources */,
 				72C005F022CC7FE200C9AAE6 /* Frameworks */,
 				72C005F122CC7FE200C9AAE6 /* Resources */,
+				0A5B8DA468ACD8E59DA29EC9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +228,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A5B8DA468ACD8E59DA29EC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F045E4E0956E825144FD3C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTPLogin/Pods-OTPLogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OTPLogin/Pods-OTPLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		316DA42BC51FE9268394414B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTPLoginTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25CF271E24D253298299C19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTPLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72C005DB22CC7FE100C9AAE6 /* Sources */ = {
@@ -358,6 +498,7 @@
 		};
 		72C005FD22CC7FE200C9AAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF79A8D3E93E0904C3EA8199 /* Pods-OTPLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +517,7 @@
 		};
 		72C005FE22CC7FE200C9AAE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EF5823CDB6F558A6B21466 /* Pods-OTPLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +536,7 @@
 		};
 		72C0060022CC7FE200C9AAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DD560CA69FA2EEEEE552F2 /* Pods-OTPLoginTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -414,6 +557,7 @@
 		};
 		72C0060122CC7FE200C9AAE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B37807EC4709B26ECD48299 /* Pods-OTPLoginTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
