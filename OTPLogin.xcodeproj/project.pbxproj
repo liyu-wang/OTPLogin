@@ -3,12 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4D4504C38186DD7917538DCD /* Pods_OTPLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5282CE7C0B099455B9AF4A /* Pods_OTPLoginTests.framework */; };
 		5AAA285F12242C759A2D4CFF /* Pods_OTPLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45752D26E117131B1A01AC59 /* Pods_OTPLogin.framework */; };
+		724E9E6E22CCAEDE00921BCA /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E6D22CCAEDE00921BCA /* LoginService.swift */; };
+		724E9E7022CCAEEA00921BCA /* LoginServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E6F22CCAEEA00921BCA /* LoginServiceImpl.swift */; };
+		724E9E7422CCB30600921BCA /* LoginServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7322CCB30600921BCA /* LoginServiceTests.swift */; };
+		724E9E7622CCBEE500921BCA /* WebServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7522CCBEE500921BCA /* WebServiceError.swift */; };
+		724E9E7922CCC38B00921BCA /* OneTimePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7822CCC38B00921BCA /* OneTimePassword.swift */; };
 		72C005E322CC7FE100C9AAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */; };
 		72C005E522CC7FE100C9AAE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005E422CC7FE100C9AAE6 /* ViewController.swift */; };
 		72C005E822CC7FE100C9AAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C005E622CC7FE100C9AAE6 /* Main.storyboard */; };
@@ -31,6 +36,11 @@
 		03EF5823CDB6F558A6B21466 /* Pods-OTPLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLogin.release.xcconfig"; path = "Target Support Files/Pods-OTPLogin/Pods-OTPLogin.release.xcconfig"; sourceTree = "<group>"; };
 		45752D26E117131B1A01AC59 /* Pods_OTPLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5282CE7C0B099455B9AF4A /* Pods_OTPLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		724E9E6D22CCAEDE00921BCA /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		724E9E6F22CCAEEA00921BCA /* LoginServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceImpl.swift; sourceTree = "<group>"; };
+		724E9E7322CCB30600921BCA /* LoginServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTests.swift; sourceTree = "<group>"; };
+		724E9E7522CCBEE500921BCA /* WebServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceError.swift; sourceTree = "<group>"; };
+		724E9E7822CCC38B00921BCA /* OneTimePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimePassword.swift; sourceTree = "<group>"; };
 		72C005DF22CC7FE100C9AAE6 /* OTPLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C005E422CC7FE100C9AAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +85,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		724E9E6C22CCAE9A00921BCA /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E7522CCBEE500921BCA /* WebServiceError.swift */,
+				724E9E6D22CCAEDE00921BCA /* LoginService.swift */,
+				724E9E6F22CCAEEA00921BCA /* LoginServiceImpl.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		724E9E7722CCC36C00921BCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E7822CCC38B00921BCA /* OneTimePassword.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		72C005D622CC7FE100C9AAE6 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +126,8 @@
 		72C005E122CC7FE100C9AAE6 /* OTPLogin */ = {
 			isa = PBXGroup;
 			children = (
+				724E9E7722CCC36C00921BCA /* Models */,
+				724E9E6C22CCAE9A00921BCA /* WebServices */,
 				72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */,
 				72C005E422CC7FE100C9AAE6 /* ViewController.swift */,
 				72C005E622CC7FE100C9AAE6 /* Main.storyboard */,
@@ -112,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				72C005F722CC7FE200C9AAE6 /* OTPLoginTests.swift */,
+				724E9E7322CCB30600921BCA /* LoginServiceTests.swift */,
 				72C005F922CC7FE200C9AAE6 /* Info.plist */,
 			);
 			path = OTPLoginTests;
@@ -125,7 +156,6 @@
 				E7DD560CA69FA2EEEEE552F2 /* Pods-OTPLoginTests.debug.xcconfig */,
 				8B37807EC4709B26ECD48299 /* Pods-OTPLoginTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -236,22 +266,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -264,22 +283,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OTPLogin/Pods-OTPLogin-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-OTPLogin/Pods-OTPLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-OTPLogin/Pods-OTPLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -337,7 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724E9E7922CCC38B00921BCA /* OneTimePassword.swift in Sources */,
+				724E9E7622CCBEE500921BCA /* WebServiceError.swift in Sources */,
 				72C005E522CC7FE100C9AAE6 /* ViewController.swift in Sources */,
+				724E9E7022CCAEEA00921BCA /* LoginServiceImpl.swift in Sources */,
+				724E9E6E22CCAEDE00921BCA /* LoginService.swift in Sources */,
 				72C005E322CC7FE100C9AAE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C005F822CC7FE200C9AAE6 /* OTPLoginTests.swift in Sources */,
+				724E9E7422CCB30600921BCA /* LoginServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -486,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -541,6 +554,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYS98PS2CY;
 				INFOPLIST_FILE = OTPLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -562,6 +576,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYS98PS2CY;
 				INFOPLIST_FILE = OTPLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
