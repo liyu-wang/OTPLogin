@@ -12,8 +12,6 @@ import RxCocoa
 import Lottie
 
 class RewardViewController: BaseViewController {
-
-    var viewModel: RewardViewModel!
     
     private let animationView = AnimationView()
     
@@ -52,6 +50,7 @@ extension RewardViewController {
         
         self.animationView.animation = animation
         self.animationView.contentMode = .scaleAspectFit
+        self.animationView.backgroundBehavior = .pauseAndRestore
         self.animationView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(self.animationView)
         

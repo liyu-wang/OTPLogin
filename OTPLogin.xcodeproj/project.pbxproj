@@ -28,7 +28,6 @@
 		72C005ED22CC7FE200C9AAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C005EB22CC7FE200C9AAE6 /* LaunchScreen.storyboard */; };
 		72C005F822CC7FE200C9AAE6 /* OTPLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005F722CC7FE200C9AAE6 /* OTPLoginTests.swift */; };
 		72DDFE6222CDD73300C318E0 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DDFE6122CDD73300C318E0 /* RewardViewController.swift */; };
-		72DDFE6422CDD74300C318E0 /* RewardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DDFE6322CDD74300C318E0 /* RewardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +67,6 @@
 		72C005F722CC7FE200C9AAE6 /* OTPLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPLoginTests.swift; sourceTree = "<group>"; };
 		72C005F922CC7FE200C9AAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72DDFE6122CDD73300C318E0 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
-		72DDFE6322CDD74300C318E0 /* RewardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewModel.swift; sourceTree = "<group>"; };
 		8B37807EC4709B26ECD48299 /* Pods-OTPLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLoginTests.release.xcconfig"; path = "Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7DD560CA69FA2EEEEE552F2 /* Pods-OTPLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF79A8D3E93E0904C3EA8199 /* Pods-OTPLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLogin.debug.xcconfig"; path = "Target Support Files/Pods-OTPLogin/Pods-OTPLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				724E9E7E22CCD8BC00921BCA /* LoginViewModel.swift */,
-				72DDFE6322CDD74300C318E0 /* RewardViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -425,7 +422,6 @@
 				724E9E8C22CE2AD600921BCA /* MainCoordinator.swift in Sources */,
 				724E9E7922CCC38B00921BCA /* OneTimePassword.swift in Sources */,
 				72DDFE6222CDD73300C318E0 /* RewardViewController.swift in Sources */,
-				72DDFE6422CDD74300C318E0 /* RewardViewModel.swift in Sources */,
 				724E9E9122CE30B500921BCA /* BaseViewController.swift in Sources */,
 				724E9E8E22CE2B5C00921BCA /* Storyboarded.swift in Sources */,
 				724E9E7622CCBEE500921BCA /* WebServiceError.swift in Sources */,

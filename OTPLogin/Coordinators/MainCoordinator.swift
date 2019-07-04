@@ -31,7 +31,6 @@ extension MainCoordinator: ShowRewardCoordinator {
     
     func showRewardScreen() {
         let rewardViewController = RewardViewController.instantiate()
-        rewardViewController.viewModel = RewardViewModel()
         self.navigationController.pushViewController(rewardViewController, animated: true)
     }
     
