@@ -89,7 +89,10 @@ extension LoginViewController {
 extension LoginViewController {
     
     func switchScreen() {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let rewardVC = storyboard.instantiateViewController(withIdentifier: "RewardViewController")
+        let navController = UINavigationController(rootViewController: rewardVC)
+        self.present(navController, animated: true, completion: nil)
     }
     
 }
