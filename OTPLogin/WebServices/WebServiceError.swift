@@ -28,7 +28,11 @@ extension WebServiceError: LocalizedError {
         case .payloadDecodingError:
             return "Failed to decode JSON."
         case .unacceptableStatusCode(let code):
-            return "unacceptable status code: \(code)."
+            if code == 401 {
+                return "Unauthorized request, please double check your code."
+            } else {
+                return "unacceptable status code: \(code)."
+            }
         }
     }
     
