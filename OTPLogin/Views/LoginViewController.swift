@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
     
     var viewModel: LoginViewModel! = LoginViewModel()
     
@@ -39,6 +40,11 @@ extension LoginViewController {
         
         self.viewModel.submitEnabledDriver
             .drive(self.submitButton.rx.isEnabled)
+            .disposed(by: bag)
+        
+        self.viewModel.isLoadingDriver
+            .map { !$0 }
+            .drive(self.loadingSpinner.rx.isHidden)
             .disposed(by: bag)
         
         self.viewModel.errorObservable

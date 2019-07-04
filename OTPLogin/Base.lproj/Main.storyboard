@@ -38,12 +38,18 @@
                                 </constraints>
                                 <state key="normal" image="login"/>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-Dv-lzA">
+                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                                <color key="color" red="0.23921568630000001" green="0.85098039219999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="AKV-Dv-lzA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1Hx-wT-KJl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MpG-la-FSg" secondAttribute="trailing" constant="50" id="6XQ-3d-1d0"/>
                             <constraint firstItem="CgD-CH-P61" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="BAW-ks-5UE"/>
                             <constraint firstItem="CgD-CH-P61" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FFp-Hc-PFU"/>
+                            <constraint firstItem="AKV-Dv-lzA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HKx-Tl-OaC"/>
                             <constraint firstItem="KbY-KU-oKi" firstAttribute="top" secondItem="CgD-CH-P61" secondAttribute="bottom" constant="25" id="Spd-I9-okg"/>
                             <constraint firstItem="MpG-la-FSg" firstAttribute="leading" secondItem="KbY-KU-oKi" secondAttribute="trailing" constant="10" id="hpJ-hY-UGD"/>
                             <constraint firstItem="MpG-la-FSg" firstAttribute="centerY" secondItem="KbY-KU-oKi" secondAttribute="centerY" id="nIe-kQ-Prr"/>
@@ -52,6 +58,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loadingSpinner" destination="AKV-Dv-lzA" id="rhW-Wa-mHb"/>
                         <outlet property="passwordField" destination="KbY-KU-oKi" id="0Ev-wO-P8d"/>
                         <outlet property="submitButton" destination="MpG-la-FSg" id="Qhk-7l-KAQ"/>
                     </connections>
