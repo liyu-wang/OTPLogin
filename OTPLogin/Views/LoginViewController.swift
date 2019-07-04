@@ -10,13 +10,21 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class LoginViewController: UIViewController {
+protocol ShowRewardCoordinator: AnyObject {
+    
+    func showRewardScreen()
+
+}
+
+class LoginViewController: BaseViewController {
 
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
     
-    var viewModel: LoginViewModel! = LoginViewModel()
+    weak var coordinator: ShowRewardCoordinator?
+    
+    var viewModel: LoginViewModel!
     
     private let bag = DisposeBag()
     
@@ -27,6 +35,18 @@ class LoginViewController: UIViewController {
         self.setupReactive()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
 }
 
 // MARK: - Rx
@@ -76,23 +96,10 @@ extension LoginViewController {
             .observeOn(MainScheduler.instance)
             .subscribe(
                 onSuccess: { [weak self] in
-                    self?.switchScreen()
+                    self?.coordinator?.showRewardScreen()
                 }
             )
             .disposed(by: bag)
-    }
-    
-}
-
-// MARK: - UI
-
-extension LoginViewController {
-    
-    func switchScreen() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let rewardVC = storyboard.instantiateViewController(withIdentifier: "RewardViewController")
-        let navController = UINavigationController(rootViewController: rewardVC)
-        self.present(navController, animated: true, completion: nil)
     }
     
 }

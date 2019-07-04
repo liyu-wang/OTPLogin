@@ -67,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="280" y="21"/>
         </scene>
-        <!--Reward View Controller-->
+        <!--Reward-->
         <scene sceneID="rMd-uh-aaT">
             <objects>
                 <viewController storyboardIdentifier="RewardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0MF-DX-x4O" customClass="RewardViewController" customModule="OTPLogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,6 +77,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="prL-Sy-Qgh"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Reward" id="per-33-CM9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8j-nG-ByB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

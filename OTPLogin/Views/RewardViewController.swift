@@ -11,9 +11,9 @@ import RxSwift
 import RxCocoa
 import Lottie
 
-class RewardViewController: UIViewController {
+class RewardViewController: BaseViewController {
 
-    var viewModel: RewardViewModel! = RewardViewModel()
+    var viewModel: RewardViewModel!
     
     private let animationView = AnimationView()
     

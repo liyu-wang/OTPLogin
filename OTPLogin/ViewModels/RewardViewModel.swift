@@ -12,6 +12,4 @@ import RxCocoa
 
 struct RewardViewModel {
     
-    
-    
 }

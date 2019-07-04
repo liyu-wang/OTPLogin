@@ -18,6 +18,10 @@
 		724E9E7F22CCD8BC00921BCA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7E22CCD8BC00921BCA /* LoginViewModel.swift */; };
 		724E9E8222CCEFAB00921BCA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E8122CCEFAB00921BCA /* UIViewController+Extensions.swift */; };
 		724E9E8722CE087500921BCA /* 1138-deer.json in Resources */ = {isa = PBXBuildFile; fileRef = 724E9E8622CE087500921BCA /* 1138-deer.json */; };
+		724E9E8A22CE2A6900921BCA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E8922CE2A6900921BCA /* Coordinator.swift */; };
+		724E9E8C22CE2AD600921BCA /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E8B22CE2AD600921BCA /* MainCoordinator.swift */; };
+		724E9E8E22CE2B5C00921BCA /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E8D22CE2B5C00921BCA /* Storyboarded.swift */; };
+		724E9E9122CE30B500921BCA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E9022CE30B500921BCA /* BaseViewController.swift */; };
 		72C005E322CC7FE100C9AAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */; };
 		72C005E822CC7FE100C9AAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C005E622CC7FE100C9AAE6 /* Main.storyboard */; };
 		72C005EA22CC7FE200C9AAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C005E922CC7FE200C9AAE6 /* Assets.xcassets */; };
@@ -50,6 +54,10 @@
 		724E9E7E22CCD8BC00921BCA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		724E9E8122CCEFAB00921BCA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		724E9E8622CE087500921BCA /* 1138-deer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1138-deer.json"; sourceTree = "<group>"; };
+		724E9E8922CE2A6900921BCA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		724E9E8B22CE2AD600921BCA /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		724E9E8D22CE2B5C00921BCA /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		724E9E9022CE30B500921BCA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		72C005DF22CC7FE100C9AAE6 /* OTPLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C005E722CC7FE100C9AAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,6 +155,24 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		724E9E8822CE288500921BCA /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E8922CE2A6900921BCA /* Coordinator.swift */,
+				724E9E8B22CE2AD600921BCA /* MainCoordinator.swift */,
+				724E9E8D22CE2B5C00921BCA /* Storyboarded.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		724E9E8F22CE30A300921BCA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E9022CE30B500921BCA /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		72C005D622CC7FE100C9AAE6 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +196,8 @@
 		72C005E122CC7FE100C9AAE6 /* OTPLogin */ = {
 			isa = PBXGroup;
 			children = (
+				724E9E8822CE288500921BCA /* Coordinators */,
+				724E9E8F22CE30A300921BCA /* Base */,
 				724E9E8522CE086500921BCA /* Animations */,
 				724E9E8022CCEF8400921BCA /* Extensions */,
 				724E9E7A22CCD83C00921BCA /* Views */,
@@ -394,11 +422,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				724E9E7D22CCD8A200921BCA /* LoginViewController.swift in Sources */,
+				724E9E8C22CE2AD600921BCA /* MainCoordinator.swift in Sources */,
 				724E9E7922CCC38B00921BCA /* OneTimePassword.swift in Sources */,
 				72DDFE6222CDD73300C318E0 /* RewardViewController.swift in Sources */,
 				72DDFE6422CDD74300C318E0 /* RewardViewModel.swift in Sources */,
+				724E9E9122CE30B500921BCA /* BaseViewController.swift in Sources */,
+				724E9E8E22CE2B5C00921BCA /* Storyboarded.swift in Sources */,
 				724E9E7622CCBEE500921BCA /* WebServiceError.swift in Sources */,
 				724E9E7F22CCD8BC00921BCA /* LoginViewModel.swift in Sources */,
+				724E9E8A22CE2A6900921BCA /* Coordinator.swift in Sources */,
 				724E9E8222CCEFAB00921BCA /* UIViewController+Extensions.swift in Sources */,
 				724E9E7022CCAEEA00921BCA /* LoginServiceImpl.swift in Sources */,
 				724E9E6E22CCAEDE00921BCA /* LoginService.swift in Sources */,
