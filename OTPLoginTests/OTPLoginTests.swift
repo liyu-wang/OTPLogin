@@ -31,6 +31,36 @@ class OTPLoginTests: XCTestCase {
         super.tearDown()
     }
     
+    func testSubmitDisabled() {
+        self.loginViewModel = LoginViewModel()
+        
+        let submitEnabled = self.scheduler.createObserver(Bool.self)
+        
+        self.loginViewModel.submitEnabledDriver
+            .drive(submitEnabled)
+            .disposed(by: bag)
+        
+        self.scheduler.start()
+        
+        XCTAssertRecordedElements(submitEnabled.events, [false])
+    }
+    
+    func testSubmitEnabled() {
+        self.loginViewModel = LoginViewModel()
+        
+        let submitEnabled = self.scheduler.createObserver(Bool.self)
+        
+        self.loginViewModel.submitEnabledDriver
+            .drive(submitEnabled)
+            .disposed(by: bag)
+        
+        self.scheduler.start()
+        
+        self.loginViewModel.password.accept("ddd")
+        
+        XCTAssertRecordedElements(submitEnabled.events, [false, true])
+    }
+    
     func testIsLoading() {
         self.loginViewModel = LoginViewModel(webService: MockLoginSuccessWebService())
 
