@@ -8,15 +8,13 @@ target 'OTPLogin' do
   # Pods for OTPLogin
   pod 'RxSwift',  '~> 5.0'
   pod 'RxCocoa',  '~> 5.0'
+  pod 'RxTest', '~> 5.0'
   pod 'RxBlocking', '~> 5.0'
   pod 'lottie-ios'
 
   target 'OTPLoginTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'RxSwift',  '~> 5.0'
-    pod 'RxCocoa',  '~> 5.0'
-    pod 'RxBlocking', '~> 5.0'
   end
 
 end

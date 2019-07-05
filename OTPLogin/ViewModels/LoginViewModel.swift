@@ -53,7 +53,7 @@ extension LoginViewModel {
         
         return self.webService
             .login(with: OneTimePassword(code: self.password.value))
-            .map { _ in return () }
+            .map { _ in return }
             .do(
                 onError: { error in
                     self.error.accept(error)
