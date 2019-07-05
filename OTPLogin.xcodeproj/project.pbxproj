@@ -3,16 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D4504C38186DD7917538DCD /* Pods_OTPLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5282CE7C0B099455B9AF4A /* Pods_OTPLoginTests.framework */; };
+		5AAA285F12242C759A2D4CFF /* Pods_OTPLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45752D26E117131B1A01AC59 /* Pods_OTPLogin.framework */; };
+		724E9E6E22CCAEDE00921BCA /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E6D22CCAEDE00921BCA /* LoginService.swift */; };
+		724E9E7022CCAEEA00921BCA /* LoginServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E6F22CCAEEA00921BCA /* LoginServiceImpl.swift */; };
+		724E9E7422CCB30600921BCA /* LoginServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7322CCB30600921BCA /* LoginServiceTests.swift */; };
+		724E9E7622CCBEE500921BCA /* WebServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7522CCBEE500921BCA /* WebServiceError.swift */; };
+		724E9E7922CCC38B00921BCA /* OneTimePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7822CCC38B00921BCA /* OneTimePassword.swift */; };
+		724E9E7D22CCD8A200921BCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7C22CCD8A200921BCA /* LoginViewController.swift */; };
+		724E9E7F22CCD8BC00921BCA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E7E22CCD8BC00921BCA /* LoginViewModel.swift */; };
+		724E9E8222CCEFAB00921BCA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E8122CCEFAB00921BCA /* UIViewController+Extensions.swift */; };
+		724E9E8722CE087500921BCA /* 1138-deer.json in Resources */ = {isa = PBXBuildFile; fileRef = 724E9E8622CE087500921BCA /* 1138-deer.json */; };
+		724E9E8A22CE2A6900921BCA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E8922CE2A6900921BCA /* Coordinator.swift */; };
+		724E9E8C22CE2AD600921BCA /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E8B22CE2AD600921BCA /* MainCoordinator.swift */; };
+		724E9E8E22CE2B5C00921BCA /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E8D22CE2B5C00921BCA /* Storyboarded.swift */; };
+		724E9E9122CE30B500921BCA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E9E9022CE30B500921BCA /* BaseViewController.swift */; };
 		72C005E322CC7FE100C9AAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */; };
-		72C005E522CC7FE100C9AAE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005E422CC7FE100C9AAE6 /* ViewController.swift */; };
 		72C005E822CC7FE100C9AAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C005E622CC7FE100C9AAE6 /* Main.storyboard */; };
 		72C005EA22CC7FE200C9AAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C005E922CC7FE200C9AAE6 /* Assets.xcassets */; };
 		72C005ED22CC7FE200C9AAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C005EB22CC7FE200C9AAE6 /* LaunchScreen.storyboard */; };
 		72C005F822CC7FE200C9AAE6 /* OTPLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C005F722CC7FE200C9AAE6 /* OTPLoginTests.swift */; };
+		72DDFE6222CDD73300C318E0 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DDFE6122CDD73300C318E0 /* RewardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +41,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03EF5823CDB6F558A6B21466 /* Pods-OTPLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLogin.release.xcconfig"; path = "Target Support Files/Pods-OTPLogin/Pods-OTPLogin.release.xcconfig"; sourceTree = "<group>"; };
+		45752D26E117131B1A01AC59 /* Pods_OTPLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5282CE7C0B099455B9AF4A /* Pods_OTPLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		724E9E6D22CCAEDE00921BCA /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		724E9E6F22CCAEEA00921BCA /* LoginServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceImpl.swift; sourceTree = "<group>"; };
+		724E9E7322CCB30600921BCA /* LoginServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTests.swift; sourceTree = "<group>"; };
+		724E9E7522CCBEE500921BCA /* WebServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceError.swift; sourceTree = "<group>"; };
+		724E9E7822CCC38B00921BCA /* OneTimePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimePassword.swift; sourceTree = "<group>"; };
+		724E9E7C22CCD8A200921BCA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		724E9E7E22CCD8BC00921BCA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		724E9E8122CCEFAB00921BCA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		724E9E8622CE087500921BCA /* 1138-deer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1138-deer.json"; sourceTree = "<group>"; };
+		724E9E8922CE2A6900921BCA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		724E9E8B22CE2AD600921BCA /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		724E9E8D22CE2B5C00921BCA /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		724E9E9022CE30B500921BCA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		72C005DF22CC7FE100C9AAE6 /* OTPLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72C005E422CC7FE100C9AAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72C005E722CC7FE100C9AAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72C005E922CC7FE200C9AAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C005EC22CC7FE200C9AAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +66,10 @@
 		72C005F322CC7FE200C9AAE6 /* OTPLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTPLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C005F722CC7FE200C9AAE6 /* OTPLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPLoginTests.swift; sourceTree = "<group>"; };
 		72C005F922CC7FE200C9AAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72DDFE6122CDD73300C318E0 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		8B37807EC4709B26ECD48299 /* Pods-OTPLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLoginTests.release.xcconfig"; path = "Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7DD560CA69FA2EEEEE552F2 /* Pods-OTPLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLoginTests.debug.xcconfig"; path = "Target Support Files/Pods-OTPLoginTests/Pods-OTPLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF79A8D3E93E0904C3EA8199 /* Pods-OTPLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPLogin.debug.xcconfig"; path = "Target Support Files/Pods-OTPLogin/Pods-OTPLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAA285F12242C759A2D4CFF /* Pods_OTPLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +85,99 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4504C38186DD7917538DCD /* Pods_OTPLoginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		453E18B9B104A8A99E885B53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45752D26E117131B1A01AC59 /* Pods_OTPLogin.framework */,
+				5D5282CE7C0B099455B9AF4A /* Pods_OTPLoginTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		724E9E6C22CCAE9A00921BCA /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E7522CCBEE500921BCA /* WebServiceError.swift */,
+				724E9E6D22CCAEDE00921BCA /* LoginService.swift */,
+				724E9E6F22CCAEEA00921BCA /* LoginServiceImpl.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		724E9E7722CCC36C00921BCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E7822CCC38B00921BCA /* OneTimePassword.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		724E9E7A22CCD83C00921BCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E7C22CCD8A200921BCA /* LoginViewController.swift */,
+				72DDFE6122CDD73300C318E0 /* RewardViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		724E9E7B22CCD84800921BCA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E7E22CCD8BC00921BCA /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		724E9E8022CCEF8400921BCA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E8122CCEFAB00921BCA /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		724E9E8522CE086500921BCA /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E8622CE087500921BCA /* 1138-deer.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		724E9E8822CE288500921BCA /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E8922CE2A6900921BCA /* Coordinator.swift */,
+				724E9E8B22CE2AD600921BCA /* MainCoordinator.swift */,
+				724E9E8D22CE2B5C00921BCA /* Storyboarded.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		724E9E8F22CE30A300921BCA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				724E9E9022CE30B500921BCA /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		72C005D622CC7FE100C9AAE6 = {
 			isa = PBXGroup;
 			children = (
 				72C005E122CC7FE100C9AAE6 /* OTPLogin */,
 				72C005F622CC7FE200C9AAE6 /* OTPLoginTests */,
 				72C005E022CC7FE100C9AAE6 /* Products */,
+				96123CD715662814FE527696 /* Pods */,
+				453E18B9B104A8A99E885B53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +193,15 @@
 		72C005E122CC7FE100C9AAE6 /* OTPLogin */ = {
 			isa = PBXGroup;
 			children = (
+				724E9E8822CE288500921BCA /* Coordinators */,
+				724E9E8F22CE30A300921BCA /* Base */,
+				724E9E8522CE086500921BCA /* Animations */,
+				724E9E8022CCEF8400921BCA /* Extensions */,
+				724E9E7A22CCD83C00921BCA /* Views */,
+				724E9E7B22CCD84800921BCA /* ViewModels */,
+				724E9E7722CCC36C00921BCA /* Models */,
+				724E9E6C22CCAE9A00921BCA /* WebServices */,
 				72C005E222CC7FE100C9AAE6 /* AppDelegate.swift */,
-				72C005E422CC7FE100C9AAE6 /* ViewController.swift */,
 				72C005E622CC7FE100C9AAE6 /* Main.storyboard */,
 				72C005E922CC7FE200C9AAE6 /* Assets.xcassets */,
 				72C005EB22CC7FE200C9AAE6 /* LaunchScreen.storyboard */,
@@ -91,9 +214,21 @@
 			isa = PBXGroup;
 			children = (
 				72C005F722CC7FE200C9AAE6 /* OTPLoginTests.swift */,
+				724E9E7322CCB30600921BCA /* LoginServiceTests.swift */,
 				72C005F922CC7FE200C9AAE6 /* Info.plist */,
 			);
 			path = OTPLoginTests;
+			sourceTree = "<group>";
+		};
+		96123CD715662814FE527696 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF79A8D3E93E0904C3EA8199 /* Pods-OTPLogin.debug.xcconfig */,
+				03EF5823CDB6F558A6B21466 /* Pods-OTPLogin.release.xcconfig */,
+				E7DD560CA69FA2EEEEE552F2 /* Pods-OTPLoginTests.debug.xcconfig */,
+				8B37807EC4709B26ECD48299 /* Pods-OTPLoginTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72C005FC22CC7FE200C9AAE6 /* Build configuration list for PBXNativeTarget "OTPLogin" */;
 			buildPhases = (
+				E25CF271E24D253298299C19 /* [CP] Check Pods Manifest.lock */,
 				72C005DB22CC7FE100C9AAE6 /* Sources */,
 				72C005DC22CC7FE100C9AAE6 /* Frameworks */,
 				72C005DD22CC7FE100C9AAE6 /* Resources */,
+				2F045E4E0956E825144FD3C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72C005FF22CC7FE200C9AAE6 /* Build configuration list for PBXNativeTarget "OTPLoginTests" */;
 			buildPhases = (
+				316DA42BC51FE9268394414B /* [CP] Check Pods Manifest.lock */,
 				72C005EF22CC7FE200C9AAE6 /* Sources */,
 				72C005F022CC7FE200C9AAE6 /* Frameworks */,
 				72C005F122CC7FE200C9AAE6 /* Resources */,
@@ -177,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724E9E8722CE087500921BCA /* 1138-deer.json in Resources */,
 				72C005ED22CC7FE200C9AAE6 /* LaunchScreen.storyboard in Resources */,
 				72C005EA22CC7FE200C9AAE6 /* Assets.xcassets in Resources */,
 				72C005E822CC7FE100C9AAE6 /* Main.storyboard in Resources */,
@@ -192,12 +331,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F045E4E0956E825144FD3C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTPLogin/Pods-OTPLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTPLogin/Pods-OTPLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OTPLogin/Pods-OTPLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		316DA42BC51FE9268394414B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTPLoginTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25CF271E24D253298299C19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTPLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72C005DB22CC7FE100C9AAE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C005E522CC7FE100C9AAE6 /* ViewController.swift in Sources */,
+				724E9E7D22CCD8A200921BCA /* LoginViewController.swift in Sources */,
+				724E9E8C22CE2AD600921BCA /* MainCoordinator.swift in Sources */,
+				724E9E7922CCC38B00921BCA /* OneTimePassword.swift in Sources */,
+				72DDFE6222CDD73300C318E0 /* RewardViewController.swift in Sources */,
+				724E9E9122CE30B500921BCA /* BaseViewController.swift in Sources */,
+				724E9E8E22CE2B5C00921BCA /* Storyboarded.swift in Sources */,
+				724E9E7622CCBEE500921BCA /* WebServiceError.swift in Sources */,
+				724E9E7F22CCD8BC00921BCA /* LoginViewModel.swift in Sources */,
+				724E9E8A22CE2A6900921BCA /* Coordinator.swift in Sources */,
+				724E9E8222CCEFAB00921BCA /* UIViewController+Extensions.swift in Sources */,
+				724E9E7022CCAEEA00921BCA /* LoginServiceImpl.swift in Sources */,
+				724E9E6E22CCAEDE00921BCA /* LoginService.swift in Sources */,
 				72C005E322CC7FE100C9AAE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C005F822CC7FE200C9AAE6 /* OTPLoginTests.swift in Sources */,
+				724E9E7422CCB30600921BCA /* LoginServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,6 +573,7 @@
 		};
 		72C005FD22CC7FE200C9AAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF79A8D3E93E0904C3EA8199 /* Pods-OTPLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +592,7 @@
 		};
 		72C005FE22CC7FE200C9AAE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EF5823CDB6F558A6B21466 /* Pods-OTPLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,10 +611,12 @@
 		};
 		72C0060022CC7FE200C9AAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DD560CA69FA2EEEEE552F2 /* Pods-OTPLoginTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYS98PS2CY;
 				INFOPLIST_FILE = OTPLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -414,10 +633,12 @@
 		};
 		72C0060122CC7FE200C9AAE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B37807EC4709B26ECD48299 /* Pods-OTPLoginTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYS98PS2CY;
 				INFOPLIST_FILE = OTPLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
