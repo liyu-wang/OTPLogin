@@ -31,7 +31,7 @@ class OTPLoginTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSubmitDisabled() {
+    func testSubmitEnabledByPasswordInput() {
         self.loginViewModel = LoginViewModel()
         
         let submitEnabled = self.scheduler.createObserver(Bool.self)
@@ -40,12 +40,19 @@ class OTPLoginTests: XCTestCase {
             .drive(submitEnabled)
             .disposed(by: bag)
         
+        self.scheduler.createColdObservable([.next(10, "a"),
+                                             .next(11, "ab"),
+                                             .next(12, "a"),
+                                             .next(13, "")])
+            .bind(to: self.loginViewModel.password)
+            .disposed(by: bag)
+        
         self.scheduler.start()
         
-        XCTAssertRecordedElements(submitEnabled.events, [false])
+        XCTAssertRecordedElements(submitEnabled.events, [false, true, true, true, false])
     }
     
-    func testSubmitEnabled() {
+    func testSubmitDisabledByLogin() {
         self.loginViewModel = LoginViewModel()
         
         let submitEnabled = self.scheduler.createObserver(Bool.self)
@@ -54,11 +61,13 @@ class OTPLoginTests: XCTestCase {
             .drive(submitEnabled)
             .disposed(by: bag)
         
-        self.scheduler.start()
+        self.loginViewModel.password.accept("1234")
         
-        self.loginViewModel.password.accept("ddd")
+        _ = self.loginViewModel.login()
+            .toBlocking()
+            .materialize()
         
-        XCTAssertRecordedElements(submitEnabled.events, [false, true])
+        XCTAssertRecordedElements(submitEnabled.events, [false, true, false, true])
     }
     
     func testIsLoading() {
@@ -69,8 +78,6 @@ class OTPLoginTests: XCTestCase {
         self.loginViewModel.isLoadingDriver
             .drive(isLoading)
             .disposed(by: bag)
-        
-        self.scheduler.start()
         
         _ = self.loginViewModel.login()
             .toBlocking()
