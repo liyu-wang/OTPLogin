@@ -62,9 +62,16 @@ extension LoginViewController {
             .drive(self.submitButton.rx.isEnabled)
             .disposed(by: bag)
         
-        self.viewModel.isLoadingDriver
+        let isLoadingDriver = self.viewModel.isLoadingDriver
+        
+        isLoadingDriver
             .map { !$0 }
             .drive(self.loadingSpinner.rx.isHidden)
+            .disposed(by: bag)
+        
+        isLoadingDriver
+            .map { !$0 }
+            .drive(self.passwordField.rx.isEnabled)
             .disposed(by: bag)
         
         self.viewModel.errorObservable
