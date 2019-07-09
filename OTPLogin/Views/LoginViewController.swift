@@ -53,7 +53,7 @@ class LoginViewController: BaseViewController {
 
 extension LoginViewController {
     
-    func setupReactive() {
+    private func setupReactive() {
         self.passwordField.rx.text.orEmpty
             .bind(to: self.viewModel.password)
             .disposed(by: bag)
@@ -98,7 +98,7 @@ extension LoginViewController {
 
 extension LoginViewController {
     
-    func login() {
+    private func login() {
         self.viewModel.login()
             .observeOn(MainScheduler.instance)
             .subscribe(

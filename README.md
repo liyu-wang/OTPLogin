@@ -10,7 +10,7 @@
 
 # 3rd party libraries and frameworks 
 
-The demo project uses CocoaPods to manage the dependencies, please go to the project fonder and run `pod install` to install the dependencies, then open tthe .xcworkspace file to view the project.
+The demo project uses CocoaPods to manage the dependencies, please go to the project folder and run `pod install` to install the dependencies, then open tthe .xcworkspace file to view the project.
 
 ## Dependencies:
 
