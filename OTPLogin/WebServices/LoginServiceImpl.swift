@@ -71,7 +71,7 @@ extension LoginServiceImpl {
             let encoder = JSONEncoder()
             request.httpBody = try encoder.encode(payload)
         } catch {
-            throw WebServiceError.payloadDecodingError
+            throw WebServiceError.payloadEncodingError
         }
         
         return request
