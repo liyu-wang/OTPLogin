@@ -48,12 +48,12 @@ struct LoginViewModel {
 
 extension LoginViewModel {
     
-    func login() -> Single<Void> {
+    func login() -> Single<Bool> {
         self.isLoading.accept(true)
         
         return self.webService
             .login(with: OneTimePassword(code: self.password.value))
-            .map { _ in return }
+            .map { $0 == "ok" }
             .do(
                 onError: { error in
                     self.error.accept(error)

@@ -82,27 +82,16 @@ extension LoginViewController {
                 }
             )
             .disposed(by: bag)
-        
+
         self.submitButton.rx.tap
-            .subscribe(
-                onNext: { [weak self] in
-                    self?.login()
-                }
-            )
-            .disposed(by: bag)
-    }
-    
-}
-
-// MARK: - actions
-
-extension LoginViewController {
-    
-    private func login() {
-        self.viewModel.login()
-            .observeOn(MainScheduler.instance)
-            .subscribe(
-                onSuccess: { [weak self] in
+            .asDriver()
+            .flatMap {
+                self.viewModel.login()
+                    .asDriver(onErrorJustReturn: false)
+            }
+            .filter { $0 }
+            .drive(
+                onNext: { [weak self] _ in
                     self?.coordinator?.showRewardScreen()
                 }
             )
